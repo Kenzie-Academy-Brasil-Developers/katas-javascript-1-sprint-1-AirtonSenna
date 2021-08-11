@@ -3,10 +3,10 @@ function oneThroughTwenty() {
   let numbers = []
 
  for (let i = 1; i <= 20; i++) {
-   numbers += i
+   numbers += i + ' '
  }
 
- return numbers
+ return numbers.slice(0, -1).split(' ').join(', ')
     
 }
 
@@ -18,10 +18,10 @@ function evensToTwenty() {
 
   for (let i = 1; i <= 20; i++) {
     if (i % 2 === 0) {
-      numbers += i
+      numbers += i + ' '
     }
   }
-  return numbers
+  return numbers.slice(0, -1).split(' ').join(', ')
 
 }
 
@@ -33,10 +33,10 @@ function oddsToTwenty() {
 
   for (let i = 1; i <= 20; i++) {
     if (i % 2 !== 0) {
-      numbers += i
+      numbers += i + ' '
     }
   }
-  return numbers
+  return numbers.slice(0, -1).split(' ').join(', ')
    
 }
 
@@ -48,10 +48,10 @@ let numbers = []
 
   for (let i = 1; i <= 100; i++) { 
     if (i % 5 === 0) {
-      numbers += i
+      numbers += i + ' '
     }
   }
-  return numbers
+  return numbers.slice(0, -1).split(' ').join(', ')
 
 }
 
@@ -62,9 +62,9 @@ function squareNumbers() {
 let square = []
 
   for (let i = 1; i <= 10; i++) {
-    square += (i * i)
+    square += (i * i) + ' '
   }
-    return square
+    return square.slice(0, -1).split(' ').join(', ')
 }
 
 console.log(squareNumbers())
@@ -74,9 +74,9 @@ function countingBackwards() {
   let numbersBack = []
 
   for (let i = 20; i >= 1; i--) {
-    numbersBack += i
+    numbersBack += i + ' '
   }
-  return numbersBack
+  return numbersBack.slice(0, -1).split(' ').join(', ')
 }
 
 console.log(countingBackwards())
@@ -87,10 +87,10 @@ let numbersBack = []
 
   for (let i = 20; i >= 1; i--) {
     if (i % 2 === 0) {
-      numbersBack += i
+      numbersBack += i + ' '
     }
   }
-  return numbersBack
+  return numbersBack.slice(0, -1).split(' ').join(', ')
 }
 
 console.log(evenNumbersBackwards())
@@ -101,10 +101,10 @@ function oddNumbersBackwards() {
 
   for (let i = 20; i >= 1; i--) {
     if (i % 2 !== 0) {
-      numbersBack += i
+      numbersBack += i + ' '
     }
   }
-  return numbersBack
+  return numbersBack.slice(0, -1).split(' ').join(', ')
 }
 
 console.log(oddNumbersBackwards())
@@ -115,10 +115,13 @@ function multiplesOfFiveBackwards() {
 
   for (let i = 100; i >= 1; i--) { 
     if (i % 5 === 0) {
-      numbersBack += i
+      numbersBack += i + ' '
     }
   }
-  return numbersBack
+
+ 
+
+  return numbersBack.slice(0, -1).split(' ').join(', ')
 
 }
 
@@ -131,9 +134,10 @@ function squareNumbersBackwards() {
   let squareBack = []
 
   for (let i = 10; i >= 1; i--) {
-    squareBack += (i * i)
+    squareBack += (i * i) + ' '
   }
-    return squareBack
+  // console.log(squareBack)
+    return squareBack.slice(0, -1).split(' ').join(', ')
 }
 
 console.log(squareNumbersBackwards())
